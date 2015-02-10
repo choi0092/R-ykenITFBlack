@@ -90,7 +90,6 @@
 /Users/imagine/IphoneDev/GitITFBlack/R-ykenITFBlack/Android/platforms/android/assets/www/jquery/jquery.mobile.structure-1.3.2.min.css \
 /Users/imagine/IphoneDev/GitITFBlack/R-ykenITFBlack/Android/platforms/android/assets/www/jquery/jquery.mobile.theme-1.3.2.min.css \
 /Users/imagine/IphoneDev/GitITFBlack/R-ykenITFBlack/Android/platforms/android/assets/www/js/audio.js \
-/Users/imagine/IphoneDev/GitITFBlack/R-ykenITFBlack/Android/platforms/android/assets/www/js/cordova.js \
 /Users/imagine/IphoneDev/GitITFBlack/R-ykenITFBlack/Android/platforms/android/assets/www/js/index.js \
 /Users/imagine/IphoneDev/GitITFBlack/R-ykenITFBlack/Android/platforms/android/assets/www/js/initialize.js \
 /Users/imagine/IphoneDev/GitITFBlack/R-ykenITFBlack/Android/platforms/android/assets/www/js/technique.js \

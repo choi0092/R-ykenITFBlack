@@ -1,13 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.dawsonloudon.videoplayer/www/VideoPlayer.js",
-        "id": "com.dawsonloudon.videoplayer.VideoPlayer",
-        "clobbers": [
-            "VideoPlayer"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.media/www/MediaError.js",
         "id": "org.apache.cordova.media.MediaError",
         "clobbers": [
@@ -19,6 +12,13 @@ module.exports = [
         "id": "org.apache.cordova.media.Media",
         "clobbers": [
             "window.Media"
+        ]
+    },
+    {
+        "file": "plugins/com.dawsonloudon.videoplayer/www/VideoPlayer.js",
+        "id": "com.dawsonloudon.videoplayer.VideoPlayer",
+        "clobbers": [
+            "VideoPlayer"
         ]
     },
     {
@@ -171,8 +171,8 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.dawsonloudon.videoplayer": "1.0.0",
     "org.apache.cordova.media": "0.2.15",
+    "com.dawsonloudon.videoplayer": "1.0.0",
     "org.apache.cordova.file": "1.3.2"
 }
 // BOTTOM OF METADATA
