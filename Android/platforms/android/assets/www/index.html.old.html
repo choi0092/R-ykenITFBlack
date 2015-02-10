@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <script src="jquery/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript">
+    $(document).bind("mobileinit", function() {
+        $.support.cors = true;
+        $.mobile.allowCrossDomainPages = true;
+    });
+    </script>
+
+  <script src="cordova.js"></script>
+  <script src="cordova_plugins.js"></script>
+  <script src="js/audio.js"></script>
+  
+  <link rel="stylesheet" href="jquery/jquery.mobile-1.3.2.min.css">
+  <script src="jquery/jquery.mobile-1.3.2.min.js"></script>
+  <script src="js/initialize.js"></script>  
+  
+      <style type="text/css">
+a{
+  opacity: 0.9;
+}
+
+.ui-mobile-viewport{
+    background: url("res/img/Default-568h@2x.png") no-repeat;
+    background-position:center center;
+    background-size: 100% 70% !important;
+}
+.ui-page{
+    background:none;
+}
+.ui-overlay-a{
+    background:#222 !important;
+}
+</style>
+</head>
+
+<body>
+<!-- Home -->
+<div data-role="page" id="languageSelection">
+        <script type="text/javascript">
+            $("#languageSelection").on("pageinit", function(e) {
+                alert("License agreement!")
+            });
+
+            $("#languageSelection").on("pageshow", function(e) {
+
+            });
+
+            $("#languageSelection").on("pagebeforeshow", function(e) {
+
+            });
+        </script>
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            ITF 태권도
+        </h3>
+    </div>
+    <div data-role="content" id="content">
+        <a data-role="button" id="English"  href="ITF/indexEn.html"
+        style=" background : #E8E8E8 ; color: black; text-shadow: none">
+            English
+        </a>
+        <a data-role="button" id="Norwegian" data-transition="flip" href="ITF/indexNor.html"
+        style=" background : #E8E8E8 ; color: black; text-shadow: none">
+            Norsk
+        </a>
+        </script>
+    </div>
+    
+     <div data-role="footer" data-position="fixed">
+       <h3>
+            NTN
+        </h3>
+    </div>
+
+</div>
+</body>
+</html>
