@@ -45,44 +45,17 @@ a{
 <body>
 <!-- Home -->
 <div data-role="page" id="languageSelection">
-        <script type="text/javascript">
-            $("#languageSelection").on("pageinit", function(e) {
-                alert("License agreement!")
-            });
-
-            $("#languageSelection").on("pageshow", function(e) {
-
-            });
-
-            $("#languageSelection").on("pagebeforeshow", function(e) {
-
-            });
-        </script>
-    <div data-theme="a" data-role="header" data-position="fixed">
+    
+    <div id="back" data-theme="a" data-role="header" data-position="fixed">
+        <a data-role="button" data-transition="flow" href="info.html" class="ui-btn-left">
+            Back
+        </a>
         <h3>
             ITF 태권도
         </h3>
-        <a data-role="button" href="info/info.html" class="ui-btn-right">
-            <i>i</i>
-        </a>
     </div>
-    <div data-role="content" id="content" visibility="hidden">
-        <a data-role="button" data-transition="flip" href="ITF/1Dan/1Dan.html"
-            style=" background : white; color: black; text-shadow: none">
-            1 단
-        </a>
-        <a data-role="button" data-transition="flip"   href="ITF/2Dan/2Dan.html"
-            style=" background : white; color: black; text-shadow: none">
-            2 단
-        </a>
-        <a data-role="button" data-transition="flip"  href="ITF/3Dan/3Dan.html"
-            style=" background : white; color: black; text-shadow: none">
-            3 단
-        </a>
-        <a data-role="button" data-transition="flip"  href="ITF/4Dan/4Dan.html"
-            style=" background : white; color: black; text-shadow: none">
-            4 단
-        </a>
+    <div data-role="content" id="content">
+    This is about us.
     </div>
     
      <div data-role="footer" data-position="fixed">

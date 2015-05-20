@@ -1,1 +1,7 @@
 .DS_Store
+*.[oa]
+*~
+*.log
+*.tmp
+*.mp4
+bin/

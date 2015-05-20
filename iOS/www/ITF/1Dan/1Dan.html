@@ -11,41 +11,28 @@
 <!-- Home -->
 <div data-role="page" id="changiEn">
     <div id="back" data-theme="a" data-role="header" data-position="fixed">
-        <a data-role="button" data-transition="flow" href="../indexEn.html" class="ui-btn-left"
-        onclick="playAudio('ITF/ChonJi/audios/ChonJi.mp3')">
+        <a data-role="button" data-transition="flow" href="../../index.html" class="ui-btn-left"
+        onclick="playAudio('ITF/1Dan/audios/ChonJi.mp3')">
             Back
         </a>
         <h3>
-            천 지
+            1 단
         </h3>
     </div>
     
     <div data-role="content">
-        <a id="frontView" data-role="button" href="#page1">
-           front view
+        <a data-role="button" data-transition="flip" href="1DanGeBaek.html"
+            style=" background : white; color: black; text-shadow: none">
+            계백
         </a>
-        <a id="sideView" data-role="button" href="#page1">
-           side view
+        <a data-role="button" data-transition="flip"   href="1DanKwangGae.html"
+            style=" background : white; color: black; text-shadow: none">
+            광계
         </a>
-        <a data-role="button" href="techniques/ChonJi0.html">
-            technique
+        <a data-role="button" data-transition="flip"  href="1DanPoEun.html"
+            style=" background : white; color: black; text-shadow: none">
+            포운
         </a>
-        <a data-role="button" href="history/history.html">
-            history
-        </a>
-           
-    <script>
-      $( "#frontView" ).on("vclick", function() {
-         var assetsPath = 'file:///android_asset/www/'
-         var videoPath =  'ITF/ChonJi/videos/FrontChonJi.mp4';
-         window.plugins.videoPlayer.play(assetsPath + videoPath);   
-      });
-      $( "#sideView" ).on("vclick", function() {
-         var assetsPath = 'file:///android_asset/www/'
-         var videoPath =  'ITF/ChonJi/videos/SideChonJi.mp4';
-         window.plugins.videoPlayer.play(assetsPath + videoPath);   
-      });
-    </script>      
     </div>
     
     <div data-role="footer" data-position="fixed">
