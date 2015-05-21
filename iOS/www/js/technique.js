@@ -3,7 +3,7 @@
        var page = "#" + id; 
        var dataString = JSON.stringify(patternData);
 	   var jsonData = JSON.parse(dataString);
-	   $(page + " #techInfo span.ui-btn-inner").text(jsonData.ChonJi.techniques[page]);
+	   //$(page + " #techInfo span.ui-btn-inner").text(jsonData.ChonJi.techniques[page]);
 	   
         // Get the filename of the next page that we stored in the data-next attribute
         var next = $( this ).jqmData( "next" );
@@ -11,16 +11,12 @@
         var prev = $( this ).jqmData( "prev" );
     // Check if we did set the data-next attribute
     if ( next ) {
-        // Prefetch the next page
-        $.mobile.loadPage( next + ".html" );
         // Navigate to next page on swipe left
         $( document ).on( "swipeleft", page, function() {
-        	$("#techInfo a").css("visibility", "hidden");
             $.mobile.changePage( next + ".html", { transition: "flow" });
         });
         // Navigate to next page when the "next" button is clicked
         $( ".next", page ).on( "click", function() {
-        	$("#techInfo a").css("visibility", "hidden");
             $.mobile.changePage( next + ".html", { transition: "flow" } );
         });
     }
@@ -29,14 +25,13 @@
         $( ".next", page ).addClass( "ui-disabled" );
     }
     // The same for the previous page (we set data-dom-cache="true" so there is no need to prefetch)
-    if ( prev ) {	
+    if ( prev ) {
+                        
         $( document ).on( "swiperight", page, function() {
-        	$("#techInfo a").css("visibility", "hidden");
             $.mobile.changePage( prev + ".html", { transition: "flow", reverse: true } );
         });
 		
         $( ".prev", page ).on( "click", function() {
-        	$("#techInfo a").css("visibility", "hidden");
             $.mobile.changePage( prev + ".html", { transition: "flow", reverse: true } );
         });
     }

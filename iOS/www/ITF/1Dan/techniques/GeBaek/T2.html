@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+                <title></title>
+                </head>
+    
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="Tech2" class="technique" data-prev="T1" data-next="T3" data-dom-cache="true" >
+            <div id="back" data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-transition="flow" href="../1DanGeBaek.html" class="ui-btn-left">
+                    Back
+                </a>
+                <h3>
+                    천지
+                </h3>
+            </div>
+            <div id="techInfo" data-role="content">
+                <div class="div-widget" style="position: fixed; top: 50%; left: 50%; margin-top: -80px; margin-left: -80px" >
+                    <img id="TechImg2" src="T2.jpg" style="display: block; width: 160px; height: 160px">
+                        </div>
+                <a data-role="button"  href="#page1" style="position: fixed; top: 50%; left: 50%; margin-top: 82px;"
+                    onclick="playAudio('ITF/1Dan/techniques/GeBaek/T2.mp3');" >
+                    place holder
+                </a>
+                <video id="video" controls style="width:100%; height:100%; display:none">
+                </video>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>
+                    Swipe side
+                </h3>
+                <a href="T1.html" class="prev ui-btn-left" data-role="button" data-theme="d" data-transition="flow">&lt;</a>
+                <a href="T3.html" class="next ui-btn-right" data-role="button" data-theme="d" data-transition="flow">&gt;</a>
+            </div>
+            <script src="../../json/patternData.jsonp"> </script>
+            <script>
+
+                               
+                               $( "#TechImg2" ).on("vclick", function() {
+                                                  var video = document.getElementById('video');
+                                                  var source = document.createElement('source');
+                                                  video.removeChild(video.childNodes[0]);
+                                                  source.setAttribute('src', 'T2.mp4');
+                                                  video.appendChild(source);
+                                                  video.load();
+                                                  video.play();      });
+                </script>
+        </div>
+    </body>
+</html>
+
