@@ -11,7 +11,7 @@
         <!-- Home -->
         <div data-role="page" id="Tech5" class="technique" data-prev="T4" data-dom-cache="true" >
             <div id="back" data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-transition="flow" href="../1DanGeBaek.html" class="ui-btn-left">
+                <a data-role="button" data-transition="flow" href="../../1DanGeBaek.html" class="ui-btn-left">
                     Back
                 </a>
                 <h3>
@@ -22,7 +22,7 @@
                 <div class="div-widget" style="position: fixed; top: 50%; left: 50%; margin-top: -80px; margin-left: -80px" >
                     <img id="TechImg5" src="T5.jpg" style="display: block; width: 160px; height: 160px">
                         </div>
-                <a data-role="button"  href="#page1" style="position: fixed; top: 50%; left: 50%; margin-top: 82px;"
+                <a data-role="button"  href="#page1" 
                     onclick="playAudio('ITF/1Dan/techniques/GeBaek/T5.mp3');" >
                     place holder
                 </a>
@@ -38,13 +38,7 @@
             </div>
             <script src="../../json/patternData.jsonp"> </script>
             <script>
-                $(document).on( 'pageshow' ,function(event){
-                               
-                               $newMargin = $("#Tech5 #techInfo span.ui-btn-inner").width()/2 * -1 - 20;
-                               $("#Tech5 #techInfo a").css("margin-left", $newMargin);
-                               $("#Tech5 #techInfo a").css("visibility", "visible");
-                               });
-                               
+                                               
                                $( "#TechImg5" ).on("vclick", function() {
                                                   var video = document.getElementById('video');
                                                   var source = document.createElement('source');
@@ -54,6 +48,8 @@
                                                   video.load();
                                                   video.play();      });
                 </script>
+            <script src="../../../../js/technique.js"></script>
+
         </div>
     </body>
 </html>
