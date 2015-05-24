@@ -1,7 +1,8 @@
 // Audio play
 function playAudio(src) {
-
-	var media = new Media(src, success, error_error);
+    var loc = document.URL;
+    var dir = loc.substring(loc.lastIndexOf('ITF'), loc.lastIndexOf('/'));
+	var media = new Media(dir + '/' + src, success, error_error);
 
 	media.play();
 }
