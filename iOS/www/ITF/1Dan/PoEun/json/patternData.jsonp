@@ -1,0 +1,15 @@
+patternData =
+{
+"techniques" :
+                {
+                 "#T0" : "Charyot",
+                 "#T1" : "Kyong Ye",
+                 "#T2" : "Narani Junbi Sogi",
+                 "#T3" : "Gunnun So Najunde Palmok Makgi",
+                 "#T4" : "Gunnun So Kaunde Baro Jirugi",
+                 "#T5" : "Niunja Kaunde An Palmok Makgi"
+                 },
+
+"history" : "Here is the history"
+
+};

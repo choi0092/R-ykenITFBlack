@@ -1,0 +1,46 @@
+patternData =
+{
+"lastTechniqueIndex" : "5",
+"techniques" :
+{
+"#T0" : {
+          "name" : "Charyot0",
+          "image" : "T0.jpg",
+          "audio" : "T0.mp3",
+          "video" : "T0.mp4"
+        },
+"#T1" : {
+           "name" : "Charyot1",
+           "image" : "T1.jpg",
+           "audio" : "T1.mp3",
+           "video" : "T1.mp4"
+        },
+"#T2" : {
+           "name" : "Charyot3",
+           "image" : "T2.jpg",
+           "audio" : "T2.mp3",
+           "video" : "T2.mp4"
+        },
+"#T3" : {
+           "name" : "Charyot3",
+           "image" : "T3.jpg",
+           "audio" : "T3.mp3",
+           "video" : "T3.mp4"
+        },
+"#T4" : {
+           "name" : "Charyot4",
+           "image" : "T4.jpg",
+           "audio" : "T4.mp3",
+           "video" : "T4.mp4"
+        },
+"#T5" : {
+           "name" : "Charyot5",
+           "image" : "T5.jpg",
+           "audio" : "T5.mp3",
+           "video" : "T5.mp4"
+         }
+},
+
+"history" : "Here is the history"
+
+};
