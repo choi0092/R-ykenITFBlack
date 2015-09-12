@@ -9,10 +9,10 @@
  
 <body>
 <!-- Home -->
-<div data-role="page" id="changiEn">
+<div data-role="page" id="PoEun">
     <div id="back" data-theme="a" data-role="header" data-position="fixed">
-        <a data-role="button" data-transition="flow" href="../../index.html" class="ui-btn-left"
-        onclick="playAudio('audios/ChonJi.mp3')">
+        <a data-role="button" data-transition="flow" href="../1Dan.html" class="ui-btn-left"
+        onclick="playAudio('audios/PoEun.mp3')">
             Back
         </a>
         <h3>
@@ -27,25 +27,40 @@
         <a id="sideView" data-role="button" href="#page1">
            side view
         </a>
-        <a data-role="button" href="techniques/ChonJi0.html">
+        <a data-role="button" href="techniques/T0.html">
             technique
         </a>
         <a data-role="button" href="history/history.html">
             history
         </a>
-           
+        
+        
+        <video id="video" controls style="width:100%; height:100%; display:none">
+        </video>
+        
     <script>
-      $( "#frontView" ).on("vclick", function() {
-         var assetsPath = 'file:///android_asset/www/'
-         var videoPath =  'ITF/ChonJi/videos/FrontChonJi.mp4';
-         window.plugins.videoPlayer.play(assetsPath + videoPath);   
-      });
-      $( "#sideView" ).on("vclick", function() {
-         var assetsPath = 'file:///android_asset/www/'
-         var videoPath =  'ITF/ChonJi/videos/SideChonJi.mp4';
-         window.plugins.videoPlayer.play(assetsPath + videoPath);   
-      });
-    </script>      
+        
+        $( "#frontView" ).on("vclick", function() {
+                             var video = document.getElementById('video');
+                             var source = document.createElement('source');
+                             video.removeChild(video.childNodes[0]);
+                             source.setAttribute('src', 'videos/FrontPoEun.mp4');
+                             video.appendChild(source);
+                             video.load();
+                             video.play();
+                             });
+                             
+                             $( "#sideView" ).on("vclick", function() {
+                             var video = document.getElementById('video');
+                             var source = document.createElement('source');
+                             source.setAttribute('src', 'videos/SidePoEun.mp4');
+                             video.removeChild(video.childNodes[0]);
+                             video.appendChild(source);
+                             video.load();
+                             video.play();
+                             });
+
+    </script>
     </div>
     
     <div data-role="footer" data-position="fixed">
